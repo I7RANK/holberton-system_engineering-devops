@@ -16,7 +16,7 @@ this script has no commas</br>
 9-John_Doe: script that sets the mode of the file hello to this:</br>
 `-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello`</br>
 10-mirror_permissions: this script sets the mode of the file hello the same as ollehs mode.</br>
-11-directories_permissions: </br>
+11-directories_permissions: script that adds execute permission to all subdirectories of the current directory for owner, group owner, and all other users. Normal files do not change</br>
 12-directory_permissions: </br>
 13-change_group: </br>
 14-change_owner_and_group: </br>
