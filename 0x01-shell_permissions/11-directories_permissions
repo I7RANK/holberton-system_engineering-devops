@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -exec chmod -R ago+x {} /;
+find /raizdelsitio -type d -exec chmod ago+x {} \;
