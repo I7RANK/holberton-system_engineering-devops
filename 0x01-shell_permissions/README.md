@@ -6,3 +6,11 @@
 4-empty: creates new file called hello.</br>
 5-execute: this script adds execute permission to the owner of the file hello.</br>
 6-multiple_permissions: this script adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.</br>
+7-everybody: script that adds execute permissions to owner, group owner, and other users to file hello</br>
+this script has no commas</br>
+8-James_Bond: script that sets the permission to the file hello as follows:</br>
+* Owner: no permission at all
+* Group: no permission at all
+* Other users: all the permissions</br>
+9-John_Doe: script that sets the mode of the file hello to this:</br>
+`-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello`</br>
