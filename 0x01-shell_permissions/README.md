@@ -17,8 +17,8 @@ this script has no commas</br>
 `-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello`</br>
 10-mirror_permissions: this script sets the mode of the file hello the same as ollehs mode.</br>
 11-directories_permissions: script that adds execute permission to all subdirectories of the current directory for owner, group owner, and all other users. Normal files do not change</br>
-12-directory_permissions: </br>
-13-change_group: </br>
-14-change_owner_and_group: </br>
-15-symbolic_link_permissions: </br>
-16-if_only: </br>
+12-directory_permissions: this script creates a directory called dir_holberton with 751 permissions on the working directory.</br>
+13-change_group: this script changes the group owner to holberton for the file hello</br>
+14-change_owner_and_group: this script changes the owner to betty and the group owner to holberton for all the files and directories in the working directory.</br>
+15-symbolic_link_permissions: script changes the owner and the group owner of the file _hello to betty and holberton respectively.</br>
+16-if_only: this script changes the owner of the file hello to betty only if it is owned by the user guillaume.</br>
