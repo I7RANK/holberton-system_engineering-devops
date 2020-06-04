@@ -11,6 +11,14 @@ this script has no commas</br>
 8-James_Bond: script that sets the permission to the file hello as follows:</br>
 * Owner: no permission at all
 * Group: no permission at all
-* Other users: all the permissions</br>
+* Other users: all the permissions  </br>
+
 9-John_Doe: script that sets the mode of the file hello to this:</br>
 `-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello`</br>
+10-mirror_permissions: this script sets the mode of the file hello the same as ollehs mode.</br>
+11-directories_permissions: </br>
+12-directory_permissions: </br>
+13-change_group: </br>
+14-change_owner_and_group: </br>
+15-symbolic_link_permissions: </br>
+16-if_only: </br>
