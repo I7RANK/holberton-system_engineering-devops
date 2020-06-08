@@ -1,0 +1,2 @@
+#!/bin/bash
+echo {a..z}{a..z} | cut -d " " -f "1-378,380-676" --output-delimiter=$'\n'
