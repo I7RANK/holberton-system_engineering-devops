@@ -17,6 +17,7 @@ do
 		((counth++))
 		echo "Hour: $counth"
 		i=1
+		((time--))
 	fi
 	echo $i
 	((time--))
