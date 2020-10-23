@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#this displays "Holberton School" 10 times with while loop
+
+h=12
+m=59
+time=$((h * 60 + m))
+
+i=0
+counth=0
+
+echo "Hour: $counth"
+while [ $time != 0 ]
+do
+	((i++))
+	if [ $i == 60 ]
+	then
+		((counth++))
+		echo "Hour: $counth"
+		i=1
+	fi
+	echo $i
+	((time--))
+done
