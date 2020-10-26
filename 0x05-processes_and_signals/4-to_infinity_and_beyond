@@ -4,4 +4,5 @@ infinity=True
 while [ $infinity ]
 do
 	echo "To infinity and beyond"
+	sleep 2
 done
