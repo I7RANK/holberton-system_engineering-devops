@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 arg = ARGV[0]
 
-expreg = arg.match(/hbt*n/)
+expreg = arg.scan(/hbt+n/).join
 
 puts expreg
