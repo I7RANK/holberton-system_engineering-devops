@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 arg = ARGV[0]
 
-expreg = arg.match(/^[A-Z]*$/)
+expreg = arg.scan(/[A-Z]/).join
 
 puts expreg
