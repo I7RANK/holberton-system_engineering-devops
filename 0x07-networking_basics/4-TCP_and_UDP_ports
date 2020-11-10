@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# display all listening ports TCP and UDP
+netstat -lp Recv-Q Send-Q
