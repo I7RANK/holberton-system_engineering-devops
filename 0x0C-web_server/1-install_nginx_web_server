@@ -2,6 +2,8 @@
 # configures a new Ubuntu machine installing Nginx
 
 sudo apt-get -y update
-sudo apt-get -y install nginx
-echo "Holberton School" >> /var/www/html/index.html
-sudo service nginx start
+sudo apt -y install nginx
+ufw allow 'Nginx HTTP' # permisos para el puerto 80
+echo "Holberton School" > index.html
+sudo mv index.html /var/www/html/
+sudo service nginx restart
