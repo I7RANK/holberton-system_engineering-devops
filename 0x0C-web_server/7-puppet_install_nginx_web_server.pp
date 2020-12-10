@@ -16,9 +16,3 @@ file_line { '/etc/nginx/sites-available/default':
   after  => 'server_name _',
   line   => 'rewrite ^/redirect_me https://www.youtube.com permanent;',
 }
-
-exec { 'restart':
-  command => 'sudo service nginx restart',
-  path    => ['/usr/bin', '/bin'],
-  returns => [0, 1],
-}
