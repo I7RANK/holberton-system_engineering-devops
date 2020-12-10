@@ -10,7 +10,7 @@ file { '/var/www/html/index.html':
   content => 'Holberton School',
 }
 
-file_line { 'default':
+file_line { '/etc/nginx/sites-available/default':
   ensure => 'present',
   path   => '/etc/nginx/sites-available/default',
   after  => 'server_name _',
@@ -21,5 +21,4 @@ exec { 'restart':
   command => 'sudo service nginx restart',
   path    => ['/usr/bin', '/bin'],
   returns => [0, 1],
-  after   => ['default'],
 }
