@@ -1,13 +1,6 @@
 # Installing nginx
 # puppet module install puppetlabs-stdlib
 
-exec { 'update':
-  command => 'sudo apt-get -y update',
-  path    => ['/usr/bin', '/bin'],
-  returns => [0, 1],
-  before  => Package['nginx'],
-}
-
 package { 'nginx':
   ensure => 'installed',
   name   => 'nginx',
