@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy on your server.
 
-sudo apt install haproxy
+sudo apt-get -y install haproxy
 
 printf "\nfrontend Local_Server
 \tbind *:80
