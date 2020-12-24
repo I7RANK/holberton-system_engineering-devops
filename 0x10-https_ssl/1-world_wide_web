@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# displays information about subdomains.
+
+print_info_subdomain () {
+    DOMAIN="$1"
+    SUB_DOMAIN="$2."
+    printf "The subdomain %s " "$2"
+    LINE=$(dig "$SUB_DOMAIN$DOMAIN" | awk '/;; ANSWER SECTION:/ {getline; print "is a " $4 " record and points to " $5}')
+    echo "$LINE"
+}
+
+if [ "$#" == 2 ]
+then
+    print_info_subdomain "$1" "$2"
+    exit
+fi
+print_info_subdomain "$1" www
+print_info_subdomain "$1" lb-01
+print_info_subdomain "$1" web-01
+print_info_subdomain "$1" web-02
+
+# check the ip in tech.com
+
