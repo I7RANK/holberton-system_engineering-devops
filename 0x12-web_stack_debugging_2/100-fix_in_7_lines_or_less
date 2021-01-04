@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# executes nginx service as nginx user but with less lines?
+chmod 007 /etc/nginx/nginx.conf
+sudo -u nginx service nginx start
+chmod 000 /etc/nginx/nginx.conf
