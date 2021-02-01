@@ -2,8 +2,8 @@
 """
 export data in the CSV format.
 """
-import requests
 import json
+import requests
 
 
 filename = "todo_all_employees.json"
@@ -31,7 +31,6 @@ for obj in list_users:
         print(rq_todos)
         exit()
 
-    print(rq_todos)
     list_tasks = rq_todos.json()
 
     for obj in list_tasks:
